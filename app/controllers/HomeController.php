@@ -11,7 +11,7 @@ class HomeController extends BaseController
 
             $userModel = $this->model('UserModel');
             
-            $data = $userModel->readFromUserName($user_name);
+            $data = $userModel->readByUserName($user_name);
 
             $db_user_name = $data[0]['user_name'];
             $db_password = $data[0]['password'];
